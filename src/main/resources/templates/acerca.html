@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaApp</title>
+  <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+  
+</head>
+<body>
+
+    <header th:insert="fragments/menu.html::menu-principal">
+    
+        </header>
+        <!--********************acerca de como se desarrollo la pagina ************************-->
+        <div class="container" style="margin-top: 90px;">
+            <div class="card">
+           
+            <h4 class="card-header">Acerca de <strong>Tienda App</strong> </h4>
+           
+            <div class="card-body">
+           
+           
+            <p>Contamos con las mejores marcas y colabraciones con las mejores tiendas</p>
+           </div>
+            </div>
+            </div> <!-- /container -->
+            
+            <div class="container-fluid p-3 my-3 ">
+                <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                <div class="card h-100">
+                <img class="rounded mx-auto d-block" th:src="@{/images/vans.jpg}" alt="Generic placeholder image" width="150" height="150"
+                style="margin-top: 10px;">
+                <div class="card-body">
+                <h5 class="card-title text-center">Tenis Old Skool Vans negro</h5>
+                <p class="card-text text-justify">Las Old Skool de Vans, las primeras en lucir la inconfundible banda lateral, son unas zapatillas bajas con cordones, forro, cuello acolchado para una mayor sujeción y flexibilidad</p>
+                </div>
+                <div class="card-footer">
+                <small class="text-muted"><a class="btn btn-secondary" href="#" role="button">Ver detalles &raquo;</a></small>
+                </div>
+                </div>
+                </div>
+
+                <div class="col mb-4">
+                <div class="card h-100">
+                <img class="rounded mx-auto d-block" th:src="@{/images/travis.jpg}" alt="Generic placeholder image" width="150" height="150"
+                style="margin-top: 10px;">
+                <div class="card-body">
+                <h5 class="card-title text-center">Air Jordan VI Travis Scott</h5>
+                <p class="card-text">Cuando se apagan las luces, se enciende la energía de Travis Scott. En su última colaboración con la franquicia Jordan, el rapero más destacado del panorama musical </p>
+                </div>
+                <div class="card-footer">
+                <small class="text-muted"><a class="btn btn-secondary" href="#" role="button">Ver detalles &raquo;</a></small>
+                </div>
+                </div>
+                </div>
+               
+                <div class="col mb-4">
+                <div class="card h-100">
+                <img class="rounded mx-auto d-block" th:src="@{/images/air.jpg}" alt="Generic placeholder image" width="150" height="150"
+                style="margin-top: 10px;">
+                <div class="card-body">
+                <h5 class="card-title text-center">NIKE AIR JORDAN 1</h5>
+                <p class="card-text">El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket.</p>
+                </div>
+                <div class="card-footer">
+                <small class="text-muted"><a class="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></small>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            
+
+
+        <!--***************pie de pagina****************-->
+        <footer class="footer" th:insert="fragments/footer.html::pie-pagina">
+               
+                    </footer>
+            <script th:src="@{/bootstrap/js/jquery-3.5.1.js}"></script>
+            <script th:src="@{/bootstrap/js/popper.js}"></script>
+            <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>   
+</body>
+</html>
