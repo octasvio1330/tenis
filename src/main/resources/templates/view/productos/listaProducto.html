@@ -48,7 +48,8 @@
                   <td th:text="${p.descripcion}"></td>                 
                   <td th:text="${p.fecha}"></td>
                   <td th:text="${p.precio}"></td>
-                  <td><img th:src="@{/images/{img} (img=${p.imagen})}" width="50" height="50"></td>
+                  <td th:text="${p.imagen}"></td>
+                 <!--  <td><img th:src="@{/images/{img} (img=${p.imagen})}" width="50" height="50"></td>-->
                   <td th:text="${p.marca}"></td>
                   <td th:text="${p.detalles}"></td>
                   <td>
