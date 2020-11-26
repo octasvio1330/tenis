@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="descripcion">Descripción</label>
+                            <label for="descripcion">Apellidos</label>
                             <input type="text" class="form-control" 
                             id="descripcion"  th:field="*{descripcion}" name="descripcion" required
                             placeholder="Escriba sus apellidos" 
@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="precio">Precio</label>
+                            <label for="precio">Numero</label>
                             <input type="text" class="form-control" 
                             id="precio"  th:field="*{precio}" name="precio" required
                             placeholder="Escriba el precio" 
@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="fecha">Fecha</label>
+                            <label for="fecha">Fecha Registro</label>
                             <input type="date" class="form-control" 
                             id="fecha"  th:field="*{fecha}" name="fecha" required
                             placeholder=""
@@ -63,33 +63,33 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="confirmar">Seleccione Imagen</label>
+                            <label for="confirmar">Seleccione Colonia</label>
                             <select   class="form-control"   th:field="*{imagen}" name="imagen">
                               <option value="">Seleccione...</option>
-                              <option value="adidas.jpg">adidas.jpg</option>
-                              <option value="travis.jpg">travis.jpg</option>
-                              <option value="vans.jpg">vans.jpg</option>
-                              <option value="low.jpg">low.jpg</option>
-                              <option value="air.jpg">air.jpg</option>
+                              <option value="La perla">La perla</option>
+                              <option value="El sol">El sol</option>
+                              <option value="Agua azul">Agua azul</option>
+                              <option value="Benito Juarez">Benito Juarez</option>
+                              <option value="Vicente Villada">Vicente Villada</option>
                             </select>     
                           </div>
                     </div>
                     <div class="col-sm-4">
-                      <label for="confirmar">Seleccione marca</label>
+                      <label for="confirmar">Seleccione municipio</label>
                             <select   class="form-control" th:field="*{marca}" name="marca">
                               <option value="">Seleccione...</option>
-                              <option value="Old Skool Vans negro">Old Skool Vans negro</option>
-                              <option value="Air Jordan VI Travis Scott">Air Jordan VI Travis Scott</option>
-                              <option value="NIKE AIR JORDAN 1">NIKE AIR JORDAN 1</option>
-                              <option value="TENIS SUPERSTAR">TENIS SUPERSTAR</option>
-                              <option value="Nike">Nike</option>
-                              
+                              <option value="Nezahualcoyotl">Nezahualcoyotl</option>
+                              <option value="Iztapaluca">Iztapaluca</option>
+                              <option value="Ixtacalco">Ixtacalco</option>
+                              <option value="Los reyes">Los reyes</option>
+         
+         
                             </select> 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <label for="detalles">Detalles</label>
+                        <label for="detalles">Telefono</label>
                             <input type="text" class="form-control" 
                             id="detalles"  th:field="*{detalles}" name="detalles" required
                             placeholder="Escriba los detalles del producto"
